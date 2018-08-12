@@ -8,6 +8,6 @@ class Boat < ActiveRecord::Base
   end
 
   def self.dinghy
-    Boat.select(Boat.length <= 20)
+    Boat.all.select {|b| b.length <= 20}
   end
 end
