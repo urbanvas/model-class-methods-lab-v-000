@@ -6,4 +6,8 @@ class Boat < ActiveRecord::Base
   def self.first_five
     Boat.limit(5).order('id asc')
   end
+
+  def self.dinghy
+
+  end
 end
