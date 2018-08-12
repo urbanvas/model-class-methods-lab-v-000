@@ -9,5 +9,6 @@ class Boat < ActiveRecord::Base
 
   def self.dinghy
     Boat.all.select {|b| b.length < 20}
+    binding.pry
   end
 end
